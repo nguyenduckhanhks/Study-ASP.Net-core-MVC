@@ -1,0 +1,29 @@
+﻿@model WebApplication2.Models.GuestReponse
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>thanks</title>
+</head>
+<body>
+    <p><h1>Thank you @Model.Name !!!</h1></p>
+    <p>
+        @if (Model.WillAttend == true)
+        {
+            @:thanks you very much!!!
+        }
+        else
+        {
+            @: sorry about it!!!
+        }
+    </p>
+
+    <p>Click <a asp-action="ListReponses">here</a> to see who coming</p> 
+
+    </body>
+</html>
+
