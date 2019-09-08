@@ -1,0 +1,23 @@
+﻿@model IEnumerable<string>
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @foreach(string s in Model)
+    {
+        <ul>
+            <li>
+                @s
+            </li>
+        </ul>
+    }
+</body>
+</html>
